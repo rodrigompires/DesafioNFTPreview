@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+html {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very-dark-blue-body: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --text: hsl(0, 0%, 100%);    
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-dark-blue-body);
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 18rem;
+    border-radius: 1rem;
+    
+    background-color: var(--very-dark-blue-card);
+}
+
+.container .image img{
+    width: 15.4rem;
+    height: 15.4rem;
+    margin: 1.5rem 1.5rem .7rem 1.5rem;
+    border-radius: .5rem;
+    position: relative;  
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.container .image img:hover {
+    opacity: .5;
+    transition: .5s linear;
+}
+
+
+.container .image {
+    position: relative;  
+}
+
+.container .view {
+    position: absolute;
+    width: 15.4rem;
+    height: 15.4rem;
+    margin: 1.5rem 1.5rem .7rem 1.5rem;
+    background-color: var(--cyan);
+    border-radius: .6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container .view img {
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+}
+
+
+
+.container .title {
+    color: var(--text);
+    width: 15rem;
+    margin-right: .6rem;
+    margin-top: .2rem;
+}
+
+.container .title h2 {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.container .text {
+    margin-top: .8rem;
+    width: 15.4rem;
+}
+
+.container .text p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.container .infos {
+    width: 15.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .9rem;
+}
+
+.container .infos .price{
+    display: flex;
+    align-items: center;    
+}
+
+.container .infos .price span {
+    font-size: .8rem;
+    color: var(--cyan);
+    font-weight: 600;
+    margin-left: .4rem;
+    
+}
+
+.container .infos .date {
+    display: flex;
+    align-items: center;
+
+}
+
+.container .infos .date span {
+    font-size: .8rem;
+    color: var(--soft-blue);
+    margin-left: .4rem;
+}
+
+.container .footer img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.container .line {
+    width: 15.4rem;
+    border: .1px solid var(--very-dark-blue-line);
+    margin-top: .8rem;
+}
+
+.container .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15.4rem;
+    margin-top: 1rem;
+    margin-bottom: .7rem;
+    padding-bottom: .4rem;
+}
+
+.container .footer img {
+    border: 2px solid var(--text); 
+    border-radius: 50%;
+    
+}
+
+.container .footer .author {
+    margin-right: 3.8rem;
+}
+
+.container .footer .author span {
+    font-size: .8rem;
+}
+
+.container .footer .author .create {
+    color: var(--soft-blue);
+}
+
+.container .footer .author .name {
+    color: var(--text);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .footer .author .name:hover, .container .title h2:hover {
+    color: var(--cyan);
+}
+
+
